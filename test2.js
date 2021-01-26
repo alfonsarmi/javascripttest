@@ -4,6 +4,7 @@ var assert = require("assert");
 function assertMatch(glob, str, opts) {
   //console.log(glob, globToRegexp(glob, opts));
   assert.ok(globToRegexp(glob, opts).test(str));
+  var a = 1;
 }
 
 function assertNotMatch(glob, str, opts) {
